@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.titulo {
+    margin-top: 2cm;
+
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
+
+#boton {
+    font-size: 20px;
+}
