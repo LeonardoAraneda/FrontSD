@@ -21,3 +21,13 @@ body {
 #boton {
     font-size: 20px;
 }
+
+th, td {
+    border: solid black 1px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla table{
+    margin: 0 auto;
+}
