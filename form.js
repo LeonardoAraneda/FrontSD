@@ -35,19 +35,23 @@ function convertirformdataaobjeto(formdata){
 }
  
 function guardarobj(formobj){
-    let formarray = JSON.parse(localStorage.getItem("data")) || [];
-    formarray.push(formobj)
+    //let formarray = JSON.parse(localStorage.getItem("data")) || [];
+    //formarray.push(formobj);
     //Convierto mi array en JSON
-    let formoarrayJSON = JSON.stringify(formarray)
+    let formarrayJSON = JSON.stringify(formobj);
     //Guardo el array en formato JSON en el local storage
-    localStorage.setItem("data", formoarrayJSON)
+    //localStorage.setItem("data", formarrayJSON)
+    console.log(formobj);
 
-    fetch ("https://frozen-scrubland-95507.herokuapp.com/users/", {
+
+    
+    //console.log(formobj);
+
+    fetch ("https://frozen-scrubland-95507.herokuapp.com/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: formoarrayJSON,
+        body: formarrayJSON,
     });
 }
-
